@@ -1,0 +1,224 @@
+body{
+	background-color: #666666;
+}
+.bg-custom{
+	background: #abc;
+}
+.jumbotron{
+	border-radius: 0;
+	margin: 0;
+}
+.container{
+	min-height: 45vh;
+	padding: 15px 5px;
+}
+.container p,h2,h3,h4,h5,h6{
+	color: #333;
+}
+.form-output{
+	margin: 10px 0;
+}
+.bg-dark{
+	color: white;
+}
+.bg-secondary h3{
+	color: white;
+}
+.bg-secondary p{
+	color: white;
+}
+
+/* --- Thumbnail images --- */
+#autumTreeThumbnail {
+	background-image: url("../assets/autm-trees.jpg");
+	background-size: 150%;
+}
+#curryThumbnail {
+	background-image: url("../assets/curry.jpeg");
+	background-size: 125%;
+}
+#dogeThumbnail {
+	background-image: url("../assets/doge.jpeg");
+	background-size: 100%;
+}
+#globeEarthThumbnail {
+	background-image: url("../assets/globe-earth.jpg");
+	background-size: 100%;
+}
+.lightbox-column-thumbnail {
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 300px;
+}
+
+
+.modal-image {
+	max-width: 100%;
+	max-height: 700px;
+	display: block;
+	margin: auto;
+}
+.container .caption{
+	color: white;
+}
+.lightbox-thumbnail {
+	width: 100%;
+}
+
+/* Light box styling */
+.lightbox-row > .lightbox-column {
+	padding: 0 8px;
+}
+
+.lightbox-row:after {
+	content: "";
+  	display: table;
+  	clear: both;
+}
+
+/* Creates four equal columns that float next to each other */
+.lightbox-column {
+	float: left;
+	width: 24%;
+}
+.lightbox-preview {
+	max-height: 150px;
+	overflow: hidden;
+}
+.lightbox-preview img{
+	display: block;
+	margin: auto;
+}
+
+/* The Modal (background) */
+.lightbox-modal {
+  	display: none;
+  	position: fixed;
+  	z-index: 1;
+  	padding-top: 100px;
+  	left: 0;
+  	top: 0;
+  	width: 100%;
+  	height: 100%;
+  	overflow: auto;
+  	background-color: black;
+}
+
+/* The modal content */
+.lightbox-modal-content {
+  	position: relative;
+  	background-color: #fefefe;
+  	margin: auto;
+  	padding: 0;
+  	width: 90%;
+  	max-width: 1200px;
+}
+
+/* The close button */
+.close {
+  	color: white;
+  	position: absolute;
+  	top: 10px;
+  	right: 25px;
+  	font-size: 35px;
+  	font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  	color: #999;
+  	text-decoration: none;
+  	cursor: pointer;
+}
+
+/* Hides slides by default */
+.my-slides {
+	display: none;
+	background-color: #333;
+}
+
+/* Next and previous buttons in the modal */
+.prev,
+.next {
+  	cursor: pointer;
+  	position: absolute;
+  	top: 50%;
+  	width: auto;
+  	padding: 16px;
+  	margin-top: -50px;
+  	color: white;
+  	font-weight: bold;
+  	font-size: 20px;
+  	transition: 0.6s ease;
+  	border-radius: 0 3px 3px 0;
+  	user-select: none;
+  	-webkit-user-select: none;
+}
+
+/* Position the 'next' button */
+.next {
+  	right: 0;
+  	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.number-text {
+  	color: #f2f2f2;
+  	font-size: 12px;
+  	padding: 8px 12px;
+  	position: absolute;
+  	top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  	text-align: center;
+  	background-color: black;
+  	padding: 2px 16px;
+  	color: white;
+}
+
+img.demo {
+ 	opacity: 0.6;
+ 	max-width: 100%;
+ 	max-height: 250px;
+}
+
+.active,
+.demo:hover {
+  	opacity: 1;
+}
+
+img.hover-shadow {
+  	transition: 0.3s;
+}
+.hover-shadow:hover {
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
