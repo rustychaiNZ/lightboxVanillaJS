@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<!-- Bootstrap CSS -->
-		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/stylesheet.css">
 
 		<title>Light Box Demo</title>
@@ -20,17 +20,17 @@
 		<!-- Body container -->
 		<div class="container bg-light">
 			<!-- Clickable thumbnails to open modal -->
-			<div class="lightbox-row">
+			<div class="row row-no-margin">
 				<!-- Image 1 -->
-				<div class="lightbox-column lightbox-column-thumbnail hover-shadow lightbox-thumbnail" id="autumTreeThumbnail" onclick="openModal();currentSlide(1)"></div>
+				<div class="col-3 lightbox-column-thumbnail hover-shadow lightbox-thumbnail" id="autumTreeThumbnail" onclick="openModal();currentSlide(1)"></div>
 				<!-- Image 2 -->
-				<div class="lightbox-column lightbox-column-thumbnail hover-shadow lightbox-thumbnail" id="curryThumbnail" onclick="openModal(); currentSlide(2)"></div>
+				<div class="col-3 lightbox-column-thumbnail hover-shadow lightbox-thumbnail" id="curryThumbnail" onclick="openModal(); currentSlide(2)"></div>
 				<!-- Image 3 -->
-				<div class="lightbox-column lightbox-column-thumbnail hover-shadow lightbox-thumbnail" id="dogeThumbnail" onclick="openModal(); currentSlide(3)">
+				<div class="col-3 lightbox-column-thumbnail hover-shadow lightbox-thumbnail" id="dogeThumbnail" onclick="openModal(); currentSlide(3)">
 					<!-- <img src="assets/doge.jpeg" onclick="openModal(); currentSlide(3)" class=""> -->
 				</div>
 				<!-- Image 4 -->
-				<div class="lightbox-column lightbox-column-thumbnail hover-shadow lightbox-thumbnail" id="globeEarthThumbnail" onclick="openModal(); currentSlide(4)">
+				<div class="col-3 lightbox-column-thumbnail hover-shadow lightbox-thumbnail" id="globeEarthThumbnail" onclick="openModal(); currentSlide(4)">
 				</div>
 			</div>
 
@@ -78,20 +78,22 @@
 					</div>
 
 					<!-- Thumbnail image controls -->
-  					<div class="lightbox-column lightbox-preview">
-  						<img class="demo" src="assets/autm-trees.jpg" onclick="currentSlide(1)" alt="Trees losing their leaves in Autum">
-  					</div>
-
-  					<div class="lightbox-column lightbox-preview">
-  						<img class="demo" src="assets/curry.jpeg" onclick="currentSlide(2)" alt="A delicious curry">
-  					</div>
-
-  					<div class="lightbox-column lightbox-preview">
-  						<img class="demo" src="assets/doge.jpeg" onclick="currentSlide(3)" alt="A good doge awaiting a lovely treat">
-  					</div>
-
-  					<div class="lightbox-column lightbox-preview">
-  						<img class="demo" src="assets/globe-earth.jpg" onclick="currentSlide(4)" alt="The so called 'earth', but we all no that it is flat!">
+					<div class="row row-no-margin">
+  						<div class="col-3 lightbox-preview demo-img" id="autmTreeCarouselThumbnail" onclick="currentSlide(1)" title="">
+  							<!-- <img class="demo" src="assets/autm-trees.jpg"  alt="Trees losing their leaves in Autum"> -->
+  						</div>
+	
+  						<div class="col-3 lightbox-preview demo-img" id="curryCarouselThumbnail" onclick="currentSlide(2)" title="">
+  							<!-- <img class="demo" src="assets/curry.jpeg"  alt="A delicious curry"> -->
+  						</div>
+	
+  						<div class="col-3 lightbox-preview demo-img" id="dogeCarouselThumbnail" onclick="currentSlide(3)" title="">
+  							<!-- <img class="demo" src="assets/doge.jpeg"  alt="A good doge awaiting a lovely treat"> -->
+  						</div>
+	
+  						<div class="col-3 lightbox-preview demo-img" id="globeCarouselEarthThumbnail" onclick="currentSlide(4)" title="">
+  							<!-- <img class="demo" src="assets/globe-earth.jpg"  alt="The so called 'earth', but we all no that it is flat!"> -->
+  						</div>
   					</div>
 				
 				<!-- End of modal content -->
@@ -107,9 +109,9 @@
 
 		
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<!-- Optional JavaScript -->
 		<script src="js/script.js"></script>
 	</body>
